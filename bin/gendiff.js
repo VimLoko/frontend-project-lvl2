@@ -1,4 +1,4 @@
 #!/usr/bin/env node
-import help from '../src/gendiffHelp.js';
+import run from '../src/run.js';
 
-help.parse();
+run(process.argv);

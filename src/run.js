@@ -1,5 +1,6 @@
 import { Command } from 'commander';
-// include commander in git clone of commander repo
+import genDiff from './index.js';
+
 const program = new Command();
 
 program
@@ -8,6 +9,9 @@ program
   .description('Compares two configuration files and shows a difference.')
   .version('1.0.0', '-V, --version', 'output the version number')
   .helpOption('-h, --help', 'output usage information')
-  .option('-f, --format [type]', 'output format');
+  .option('-f, --format [type]', 'output format')
+  .action((filepath1, filepath2) => {
+    console.log(genDiff(filepath1, filepath2));
+  });
 
-export default program;
+export default (args) => program.parse(args);
