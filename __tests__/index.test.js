@@ -3,7 +3,7 @@ import { fileURLToPath } from 'url';
 import { dirname } from 'path';
 import genDiff from '../src/index.js';
 
-test('Test compare Flat JSON', () => {
+test('compare Flat JSON', () => {
   const __dirname = dirname(fileURLToPath(import.meta.url));
   const file1 = `${__dirname}/../__fixtures__/flat1.json`;
   const file2 = `${__dirname}/../__fixtures__/flat2.json`;
