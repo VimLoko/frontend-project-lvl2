@@ -1,7 +1,7 @@
-import { Command } from 'commander';
+import commander from 'commander';
 import genDiff from './index.js';
 
-const program = new Command();
+const program = new commander;
 
 program
   .arguments('<filepath1> <filepath2>')
