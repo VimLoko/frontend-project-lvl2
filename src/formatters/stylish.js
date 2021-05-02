@@ -19,8 +19,8 @@ const mapping = {
   removed: ({ key, value }, depth) => `${getIndent(depth)}  - ${key}: ${stringify(value, depth)}`,
   unchanged: ({ key, value }, depth) => `${getIndent(depth)}    ${key}: ${stringify(value, depth)}`,
   changed: ({ key, value, oldValue }, depth) => {
-    const data1 = `${getIndent(depth)}  - ${key}: ${stringify(oldValue, depth)}`;
-    const data2 = `${getIndent(depth)}  + ${key}: ${stringify(value, depth)}`;
+    const data1 = `${getIndent(depth)}  - ${key}: ${stringify(oldValue, depth)}`.trimRight();
+    const data2 = `${getIndent(depth)}  + ${key}: ${stringify(value, depth)}`.trimRight();
     return [data1, data2];
   },
 };
