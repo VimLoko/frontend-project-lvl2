@@ -9,3 +9,5 @@
 [![asciicast](https://asciinema.org/a/gn3lDnf0kZFoKylIkdzt4pxao.svg)](https://asciinema.org/a/gn3lDnf0kZFoKylIkdzt4pxao)
 ### Nested JSON and YAML:
 [![asciicast](https://asciinema.org/a/FstfbVIOxjLubPT10USw5s7TS.svg)](https://asciinema.org/a/FstfbVIOxjLubPT10USw5s7TS)
+### Plain Format:
+[![asciicast](https://asciinema.org/a/RnRg2HwYiZoAMlAc0eMBtFQnW.svg)](https://asciinema.org/a/RnRg2HwYiZoAMlAc0eMBtFQnW)
