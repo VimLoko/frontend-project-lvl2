@@ -1,8 +1,7 @@
 import _ from 'lodash';
 
 const ast = (obj1, obj2) => {
-  const objKeys = _.uniq([...Object.keys(obj1), ...Object.keys(obj2)]);
-  objKeys.sort();
+  const objKeys = _.sortBy(_.union(_.keys(obj1), _.keys(obj2)));
   return objKeys.map((key) => {
     const obj1hasKey = _.has(obj1, key);
     const obj2hasKey = _.has(obj2, key);
